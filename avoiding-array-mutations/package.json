@@ -1,0 +1,15 @@
+{
+  "name": "avoiding-array-mutations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "avoiding-array-mutations.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "deep-freeze": "0.0.1",
+    "expect": "^1.20.2"
+  }
+}
