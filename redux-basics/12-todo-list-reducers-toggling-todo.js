@@ -2,20 +2,6 @@
 var deepFreeze = require('deep-freeze');
 var expect = require('expect');
 
-const todo = (state, action) => {
-  switch (action.type) {
-    case 'ADD_TODO':
-      return {
-        id: action.id,
-        text: action.text,
-        completed: false
-      };
-    case 'TOGGLE_TODO':
-    default:
-
-  }
-};
-
 const todos = (state = [], action) => {
   switch(action.type) {
     case 'ADD_TODO':
