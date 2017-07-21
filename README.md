@@ -1,5 +1,7 @@
-<<<<<<< HEAD
-Redux examples
-=======
-# redux
->>>>>>> 584d107bf53f9acf624c990ce6a6d1f4b60249cb
+# Redux examples
+
+# Description
+Go to  redux-basics and run
+```
+# npm install
+```
