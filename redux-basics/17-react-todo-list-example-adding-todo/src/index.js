@@ -35,5 +35,7 @@ const render = () => {
   );
 };
 
+// Call renden whenever the store changes
 store.subscribe(render);
+// Renden initial state
 render();
