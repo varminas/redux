@@ -3,28 +3,29 @@ import React from 'react';
 class TodoApp extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
+    this.store = props.store;
+    this.nextTodoId = 0;
   }
 
   render() {
     return (
       <div>
         <button onClick={() => {
-          store.dispatch({
+          this.store.dispatch({
             type: 'ADD_TODO',
             text: 'Test',
-            id: nextTodoId++
+            id: this.nextTodoId++
           })
         }}>
           Add Todo
         </button>
         <ul>
-          <li>a</li>
-          <li>b</li>
+          {this.props.todos.map(todo => {
+            return (<li key={todo.id}>
+              {todo.text}
+            </li>)
+          }
+          )}
         </ul>
       </div>
     );
